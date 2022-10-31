@@ -30,7 +30,7 @@
                         <div class="form-group row mb-2">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    Join {{ $user->name }}
+                                    Juntar-se {{ $user->name }}
                                 </button>
                             </div>
                         </div>

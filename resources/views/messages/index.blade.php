@@ -31,12 +31,12 @@
         <form action="/group/delete/{{$group->id}}" method="POST">
             @csrf
             @method('Delete')
-            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete group</button>
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Apagar grupo</button>
         </form>
       </div>
       <div class="col-md-4">
         <p>
-          <a class="btn btn-warning" href="/group/members_list/{{$group->id}}" style="color:white;">Remove users</a>
+          <a class="btn btn-warning" href="/group/members_list/{{$group->id}}" style="color:white;">Remover usuários</a>
         </p>
       </div>
     </div>
@@ -45,6 +45,6 @@
     <form action="/unFollow/{{ $group->id }}" method="POST">
         @csrf
         @method('Delete')
-        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">unFollow</button>
+        <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Deixar de seguir</button>
     </form>
 @endif

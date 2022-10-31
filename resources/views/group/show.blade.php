@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">  <h1>Show</h1>  
+            <div class="card">  <h1>Mostrar</h1>  
                 <div class="card-header">  
                     <h3> Group: {{$group->name}} </h3>
                     <span class="text-danger">Code to join: {{$group->code}}</span>
@@ -13,7 +13,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <p>
-                                    <a class="btn btn-info" href="/group/edit/{{$group->id}}" style="color:white;">Edit</a>
+                                    <a class="btn btn-info" href="/group/edit/{{$group->id}}" style="color:white;">Corrigir</a>
                                 </p>
                             </div>
                             
@@ -22,13 +22,13 @@
                                     @csrf
                                     @method('Delete')
 
-                                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete group</button>
+                                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Apagar grupo</button>
                                 </form>
                             </div>
 
                             <div class="col-md-4">
                                 <p>
-                                    <a class="btn btn-warning" href="/group/members_list/{{$group->id}}" style="color:white;">Remove users</a>
+                                    <a class="btn btn-warning" href="/group/members_list/{{$group->id}}" style="color:white;">Remover usuários</a>
                                 </p>
                             </div>
                         </div>
@@ -57,7 +57,7 @@
                                 <strong>{{$message}}</strong>
                             </span>
                         @enderror
-                        <button class="btn btn-primary" type="submit">Send message</button>
+                        <button class="btn btn-primary" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -65,10 +65,4 @@
     </div>
 </div>
 
-<!--script>
-    window.onload=function () {
-     var objDiv = document.getElementById("message-container");
-     objDiv.scrollTop = objDiv.scrollHeight;
-}
-</script-->
 @endsection

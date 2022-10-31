@@ -1,20 +1,21 @@
 
 <div class="navba">
+  <!-- modificacao pode causar erro -->
     <a href="{{ url('/home') }}">
         {{ config('app.name', 'Laravel') }}
     </a>
 
   @guest
     @if (Route::has('login'))
-      <a href="{{ route('login') }}">{{ __('Login') }}</a>
+      <a href="{{ route('login') }}">{{ __('Aceder a conta') }}</a>
     @endif
     @if (Route::has('register'))
-      <a href="{{ route('register') }}">{{ __('Register') }}</a>
+      <a href="{{ route('register') }}">{{ __('Cadastrar-se') }}</a>
     @endif
 
   @else
-  <a class="btn btn-light" href="/group/create">Make group</a>
-    <a class="btn btn-light" href="/subscribe">Join group</a>
+  <a class="btn btn-light" href="/group/create">Criar um grupo</a>
+    <a class="btn btn-light" href="/subscribe">Juntar-se a um grupo</a>
     @if($users)
      <a href="" style='padding: 11px 24px;'>
        <i class='fas fa-bell' style='font-size:28px;color:red'></i>
@@ -39,7 +40,7 @@
       <div class="dropdown-content">
         <a class="dropdown-item" href="{{ route('logout') }}"
             onclick="event.preventDefault();document.getElementById('logout-form').submit();">
-                {{ __('Logout') }}
+                {{ __('Sair') }}
         </a>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
             @csrf
