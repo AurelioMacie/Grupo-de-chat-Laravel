@@ -12,7 +12,7 @@
         <meta name="user-id" content="{{ Auth::user()->id }}">
     @endif
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Grupo De Chat On-line</title>
 
     <!-- Scripts -->
 
@@ -200,7 +200,7 @@ function scrollToBottomFunc() {
            position: relative;
            display: inline-block;
            position: relative;
-    right: 24px;
+           right: 24px;
         }
 
         .dropdown-content {
@@ -220,7 +220,7 @@ function scrollToBottomFunc() {
            display: block;
         }
 
-        .dropdown a:hover {background-color: #ddd;}
+        .dropdown a:hover {background-color: blue;}
 
         .show {display: block;}
 
@@ -396,10 +396,13 @@ function scrollToBottomFunc() {
     <style>
 
 
+/* Barra de tarefas */
+
 .navba {
   overflow: hidden;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #65c368;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
 }
 
 .navba a {
@@ -411,13 +414,17 @@ function scrollToBottomFunc() {
   text-decoration: none;
 }
 
+
+/* onde aparece o nome */
 .dropdow {
   float: right;
   overflow: hidden;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-color: black;
 }
 
 .dropdow .dropbt {
-  font-size: 16px;  
+  font-size: 16x;  
   border: none;
   outline: none;
   color: white;
@@ -428,7 +435,7 @@ function scrollToBottomFunc() {
 }
 
 .navba a:hover, .dropdow:hover .dropbt {
-  background-color: red;
+  background-color: magenta;
   color:white;
 }
 

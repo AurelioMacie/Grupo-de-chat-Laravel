@@ -24,7 +24,7 @@
     <div class="row">
       <div class="col-md-4">
         <p>
-          <a class="btn btn-info" href="/group/edit/{{$group->id}}" style="color:white;">Edit</a>
+          <a class="btn btn-info" href="/group/edit/{{$group->id}}" style="color:white;">Corrigir</a>
         </p>
       </div>
       <div class="col-md-4">
